@@ -1,0 +1,10 @@
+baseURL = 'https://ashishji.is-a.dev/blog/'
+languageCode = 'en-us'
+title = 'Break · Build · Repeat'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+
+[params]
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
