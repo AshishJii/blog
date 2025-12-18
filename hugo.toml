@@ -1,14 +1,15 @@
-baseURL = 'https://ashishji.is-a.dev/blog/'
-languageCode = 'en-us'
-title = 'Break · Build · Repeat'
-theme = 'PaperMod'
+baseURL = "https://ashishji.is-a.dev/blog/"
+languageCode = "en-us"
+title = "Break · Build · Repeat"
+theme = "PaperMod"
 
 enableRobotsTXT = true
 
-caches:
-  images:
-    dir: :cacheDir/images
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
 
 [params]
   ShowReadingTime = true
   ShowCodeCopyButtons = true
+
