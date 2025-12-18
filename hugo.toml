@@ -5,6 +5,10 @@ theme = 'PaperMod'
 
 enableRobotsTXT = true
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 [params]
   ShowReadingTime = true
   ShowCodeCopyButtons = true
