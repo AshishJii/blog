@@ -1,7 +1,7 @@
-+++
-date = '2025-12-16'
-title = 'About This Blog'
-+++
+---
+title: "About This Blog"
+date: 2025-12-16
+---
 
 Hi, I’m Ashish. This is my blog, where I:
 
