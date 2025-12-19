@@ -1,5 +1,5 @@
 ---
-title: "Cloudsek CTF 2025"
+title: "CTF Write-up: Cloudsek CTF 2025"
 date: 2025-12-16
 cascade:
   - params:

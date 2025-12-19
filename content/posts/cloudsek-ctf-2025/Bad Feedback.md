@@ -1,5 +1,5 @@
 ---
-title: "CTF Write-up: Bad Feedback"
+title: "Bad Feedback"
 date: 2025-12-16
 ---
 

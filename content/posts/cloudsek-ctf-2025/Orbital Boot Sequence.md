@@ -1,5 +1,5 @@
 ---
-title: "CTF Write-up: Orbital Boot Sequence"
+title: "Orbital Boot Sequence"
 date: 2025-12-16
 ---
 

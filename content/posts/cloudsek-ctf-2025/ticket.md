@@ -1,5 +1,5 @@
 ---
-title: "CTF Write-up: Ticket"
+title: "Ticket"
 date: 2025-12-16
 ---
 

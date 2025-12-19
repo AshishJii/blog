@@ -1,5 +1,5 @@
 ---
-title: "CTF Write-up: Nitro"
+title: "Nitro"
 date: 2025-12-16
 ---
 

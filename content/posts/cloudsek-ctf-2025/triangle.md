@@ -1,5 +1,5 @@
 ---
-title: "CTF Write-up: Triangle"
+title: "Triangle"
 date: 2025-12-16
 ---
 

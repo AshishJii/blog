@@ -1,11 +1,11 @@
 ---
-title: "TCS HackQuest Season 10 Writeup"
+title: "CTF Write-up: TCS HackQuest Season 10"
 date: 2025-12-19
 ---
 
-Cybersecurity is as much about persistence as it is about technical skill. I recently participated in **TCS HackQuest Season 10** (held on December 13, 2025). The competition was intense, featuring a total of 14 challenges ranging from steganography, reverse engineering, web exploitation, binary analysis, etc.
+Cybersecurity is as much about persistence as it is about technical skill. I recently participated in **TCS HackQuest Season 10** (held on December 13, 2025). The competition was intense, featuring a total of 14 challenges ranging from steganography and reverse engineering to web exploitation and binary analysis.
 
-Despite some technical hurdles with the server in the final hours, I managed to successfully solve **11 out of the 14 questions**. This writeup serves as a detailed breakdown of my approach to these challenges.
+Despite some technical hurdles with the server in the final hours, I managed to successfully solve **11 out of the 14 questions**. This writeup provides a brief breakdown of my approach and the logic used to solve each challenge.
 
 ---
 
@@ -19,7 +19,7 @@ Despite some technical hurdles with the server in the final hours, I managed to 
 
 * **Extraction:** Downloaded the challenge archive and extracted the contents using `unzip`. I located a specific target file with a `.opt` extension.
 * **Strings Analysis:** Since the file appeared to be a binary, I ran the `strings` command to extract all sequences of printable characters.
-* **Identification:** I reviewed the multiple matches returned by the search. By filtering for the standard flag format and expected string length, I manually identified and extracted the correct flag.
+* **Identification:** I reviewed the multiple matches returned by the search. I then filtered for the standard flag format and expected string length, and manually identified and extracted the correct flag.
 
 ---
 
@@ -41,9 +41,9 @@ Despite some technical hurdles with the server in the final hours, I managed to 
 
 **Approach:**
 
-* **Vulnerability Research:** The problem description included the hint "feed it too much." In the context of binary challenges, this is a classic indicator of a **Buffer Overflow** vulnerability.
+* **Vulnerability Research:** The problem description included the hint "feed it too much." In context of binary problems, this often indicates **Buffer Overflow** vulnerability.
 * **Testing:** I executed standard initial commands to test the application logic. As expected, normal inputs did not yield results.
-* **Exploitation:** I provided an excessively long string as input to overflow the allocated buffer. This successfully overwrote the intended memory space and triggered the logic to reveal the flag.
+* **Exploitation:** I gave a very long string as input to overflow the buffer. It successfully overwrote the allocated memory space and triggered the logic to return the flag.
 
 ---
 
@@ -54,12 +54,12 @@ Despite some technical hurdles with the server in the final hours, I managed to 
 **Approach:**
 
 * **Reconnaissance:** Analyzed the webpage's health check feature and source JavaScript. Attempting to access the internal server using `curl` failed because the application had a filter against "private IPs" like `127.0.0.1`.
-* **Filter Bypass:** I bypassed the restriction by using the equivalent IP `0.0.0.0`.
+* **Filter Bypass:** I bypassed the restriction using the equivalent IP `0.0.0.0`.
 * *Payload:* `curl -X POST http://challenge.tcshackquest.com:19126/fetch -H "Content-Type: application/json" -d '{"target": "http://0.0.0.0:8080", "checkType": "full"}'`
 
 
 * **Admin Discovery:** The HTML response from the internal request contained a developer comment mentioning a hidden `/admin` endpoint.
-* **Endpoint Escalation:** Modified the payload to target `http://0.0.0.0:8080/admin`. This returned the source code of the admin panel.
+* **Endpoint Escalation:** I modified the payload to target `http://0.0.0.0:8080/admin`. This returned the source code of the admin panel.
 * **Final Extraction:** Inside the admin source, I found a commented-out API link: `/api/flag_6c968272dd7fb92e3`. Accessing this final endpoint via the same SSRF bypass revealed the flag.
 
 ---
@@ -70,7 +70,7 @@ Despite some technical hurdles with the server in the final hours, I managed to 
 
 **Approach:**
 
-* **Pattern Recognition:** The challenge involved a massive log file. The goal was to find data hidden within specific IP ranges: `92.7.X.Y` (IPv4) and `2510:a1:...` (IPv6).
+* **Pattern Recognition:** The challenge involved a massive log file. The objective was to find data hidden within given IP ranges: `92.7.X.Y` (IPv4) and `2510:a1:...` (IPv6).
 * **Data Filtering:** Used extended grep to isolate relevant entries:
 `grep -E "^92\.7\.|^2510:a1:" logfile > filtered_logs.txt`
 * **Automation:** Developed a Python script to parse the filtered IPs. I used regex to extract:
@@ -168,4 +168,4 @@ Despite some technical hurdles with the server in the final hours, I managed to 
 
 ## Conclusion
 
-TCS HackQuest Season 10 was a fantastic learning experience. While the technical glitches toward the end were a bit frustrating, solving 11 challenges provided a great opportunity to apply various tools and scripting techniques.
+TCS HackQuest Season 10 was a fantastic learning experience for me. CTFs like this serve as a reminder that the field is constantly evolving. Whether it's DNS rebinding or reversing PyInstaller binaries, there's always something new to learn. If you're a fellow student, I highly encourage diving deeper into security. While the technical challenges are demanding, the skills you gain are invaluable.
