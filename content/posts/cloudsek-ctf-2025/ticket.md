@@ -3,7 +3,7 @@ title: "CTF Write-up: Ticket"
 date: 2025-12-16
 ---
 
-**Category:** Mobile / Web Security
+**Category:** Mobile / Web Security  
 **Vulnerability:** Hardcoded Secrets & JWT Forgery
 
 ## 1\. Challenge Description

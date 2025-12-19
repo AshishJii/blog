@@ -3,7 +3,7 @@ title: "CTF Write-up: Orbital Boot Sequence"
 date: 2025-12-16
 ---
 
-**Category:** Web Exploitation
+**Category:** Web Exploitation  
 **Vulnerability:** Hardcoded Credentials, Weak JWT Secret, Server-Side Template Injection (SSTI)
 
 ## 1. Challenge Description

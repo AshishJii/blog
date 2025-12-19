@@ -3,7 +3,7 @@ title: "CTF Write-up: Triangle"
 date: 2025-12-16
 ---
 
-**Category:** Web Security / Source Code Review
+**Category:** Web Security / Source Code Review  
 **Vulnerability:** PHP Type Juggling (Loose Comparison) & Backup File Disclosure
 
 ## 1\. Challenge Description

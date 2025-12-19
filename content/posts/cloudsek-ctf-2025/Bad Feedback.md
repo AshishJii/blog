@@ -3,7 +3,7 @@ title: "CTF Write-up: Bad Feedback"
 date: 2025-12-16
 ---
 
-**Category:** Web Security / Injection
+**Category:** Web Security / Injection  
 **Vulnerability:** XML External Entity (XXE) Injection
 
 ## 1\. Challenge Description

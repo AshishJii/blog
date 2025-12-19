@@ -1,0 +1,50 @@
+baseURL: https://ashishji.is-a.dev/blog/
+title: Break · Build · Repeat
+theme: PaperMod
+enableRobotsTXT: true
+languageCode: en-us
+
+caches:
+  images:
+    dir: :cacheDir/images
+params:
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  homeInfoParams:
+    Title: Hi, I'm Ashish 👋
+    Content:
+      I document my journey in coding, security, and projects. Here I share
+      writeups of CTF challenges, experiments, and system internals. This is a
+      space to learn, build, and repeat.
+  socialIcons:
+    - name: linkedin
+      url: https://www.linkedin.com/in/ashishverma-cs
+    - name: github
+      url: https://github.com/ashishjii
+  showtoc: true
+  author: Ashish Verma
+
+
+  # hideFooter: true
+  # ShowShareButtons: true
+  # ShowPostNavLinks: true
+  # ShowRssButtonInSectionTermList: true
+  # assets:
+  #   favicon: "<url>"
+  #   favicon16x16: "<url>"
+  #   favicon32x32: "<url>"
+  #   apple_touch_icon: "<url>"
+  #   safari_pinned_tab: "<url>"
+
+  # label:
+  #   text: "TOP LEFT"
+  #   icon: https://picsum.photos/id/1/200/300
+  #   iconHeight: 35
+
+# analytics
+# params:
+#   env: production
+#   analytics:
+#     google:
+#       MeasurementID: G-XXXXXXXX

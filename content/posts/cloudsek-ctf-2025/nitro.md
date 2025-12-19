@@ -3,7 +3,7 @@ title: "CTF Write-up: Nitro"
 date: 2025-12-16
 ---
 
-**Category:** Scripting / Automation
+**Category:** Scripting / Automation  
 **Description:** A race-against-time challenge where the user must process data and submit a response faster than humanly possible.
 
 ## 1\. Challenge Description
