@@ -5,6 +5,8 @@ enableRobotsTXT: true
 languageCode: en-us
 env: production
 
+googleAnalytics: G-3DZ3RS13J4
+
 caches:
   images:
     dir: :cacheDir/images
@@ -39,10 +41,6 @@ params:
 
   images:
     - "og-default-200.png"
-
-  analytics:
-    google:
-      MeasurementID: G-3DZ3RS13J4
 
   # hideFooter: true
   # ShowShareButtons: true
