@@ -9,7 +9,7 @@ caches:
   images:
     dir: :cacheDir/images
 params:
-  description: Ashish Verma's blog on coding, security, CTF writeups, and system experiments—learn, build, repeat.
+  description: Ashish Verma’s technical blog documenting coding, cybersecurity, and system-level experiments. Explore CTF writeups, security research, reverse engineering insights, and project deep dives focused on understanding how systems break, how they’re built, and how to improve them through hands-on learning.
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
