@@ -38,7 +38,7 @@ params:
     apple_touch_icon: "favicon/apple-touch-icon.png"
 
   images:
-    - "og-default.png"
+    - "og-default-200.png"
 
   analytics:
     google:
