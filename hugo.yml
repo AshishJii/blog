@@ -37,6 +37,9 @@ params:
     favicon32x32: "favicon/favicon-32x32.png"
     apple_touch_icon: "favicon/apple-touch-icon.png"
 
+  images:
+    - "og-default.png"
+
   analytics:
     google:
       MeasurementID: GTM-5PGDZV4P
