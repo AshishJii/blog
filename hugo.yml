@@ -3,11 +3,13 @@ title: Break · Build · Repeat
 theme: PaperMod
 enableRobotsTXT: true
 languageCode: en-us
+env: production
 
 caches:
   images:
     dir: :cacheDir/images
 params:
+  description: Ashish Verma's blog on coding, security, CTF writeups, and system experiments—learn, build, repeat.
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
@@ -22,29 +24,31 @@ params:
       url: https://www.linkedin.com/in/ashishverma-cs
     - name: github
       url: https://github.com/ashishjii
+    - name: x
+      url: https://x.com/ashishdev404
+    - name: rss
+      url: index.xml
   showtoc: true
   author: Ashish Verma
 
+  assets:
+    favicon: "favicon/favicon.ico"
+    favicon16x16: "favicon/favicon-16x16.png"
+    favicon32x32: "favicon/favicon-32x32.png"
+    apple_touch_icon: "favicon/apple-touch-icon.png"
+
+  analytics:
+    google:
+      MeasurementID: GTM-5PGDZV4P
 
   # hideFooter: true
   # ShowShareButtons: true
   # ShowPostNavLinks: true
   # ShowRssButtonInSectionTermList: true
-  # assets:
-  #   favicon: "<url>"
-  #   favicon16x16: "<url>"
-  #   favicon32x32: "<url>"
-  #   apple_touch_icon: "<url>"
-  #   safari_pinned_tab: "<url>"
 
   # label:
   #   text: "TOP LEFT"
   #   icon: https://picsum.photos/id/1/200/300
   #   iconHeight: 35
 
-# analytics
-# params:
-#   env: production
-#   analytics:
-#     google:
-#       MeasurementID: G-XXXXXXXX
+
