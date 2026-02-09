@@ -32,6 +32,8 @@ params:
       url: index.xml
   showtoc: true
   author: Ashish Verma
+  mainSections:
+    - posts
 
   assets:
     favicon: "favicon/favicon.ico"
