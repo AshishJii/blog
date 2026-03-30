@@ -1,7 +1,9 @@
 ---
 title: "TOTP Explained: How a Stopwatch and Math Replaced Your Password"
-date: 2025-12-19
+date: 2026-03-19
 ---
+
+![TOTP Thumbnail](/blog/posts/TOTP_thumbnail2.png)
 
 Ever wondered about that six-digit code your authenticator app displays? The one that changes every 30 seconds? That's **TOTP (Time-based One-Time Password)**, and it's one of the most elegant pieces of security technology we use every day.
 
