@@ -5,7 +5,7 @@ enableRobotsTXT: true
 languageCode: en-us
 env: production
 
-googleAnalytics: G-3DZ3RS13J4
+googleAnalytics: G-1HFBDE3ZNS
 
 caches:
   images:
